@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MPEG-Dash</title>
+
+    <script type="text/javascript" src="scripts/util.js"></script>
+	<script type="text/javascript" src="scripts/xpath.js"></script>
+    <script type="text/javascript" src="scripts/playback.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body onload="onBodyLoad()">
+
+	<div>
+		<label for="mpd-input">MPD path:</label>
+		<input id="mpd-input" type="text" value="videos/rabbit/original_dash.mpd"/>
+		<button onclick="onPlayClick()">Play</button>
+	</div>
+
+	<div style="text-align: center; display: inline-block;">
+		<h2>Video player</h2>
+        <video id="video" controls></video>
+	</div>
+
+</body>
+</html>
